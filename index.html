@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
@@ -150,3 +151,157 @@
     <script src="./script.js"></script>
   </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header class="cabecalho"></header>
+    <section class="formulario">
+      <h1 class="formulario-titulo">Lista de Compras</h1>
+
+      <form class="formulario-container">
+        <div class="item">
+          <label for="item">Item</label>
+          <input type="text" name="item" id="item" required />
+        </div>
+        <div class="quantidade-categoria">
+          <div class="quantidade">
+            <label for="quantidade">Quantidade</label>
+            <div class="quantidade-itens">
+              <input type="text" name="quantidade" id="quantidade" required />
+              <button
+                type="button"
+                class="btn-quantidade"
+                aria-label="Selecionar unidade"
+              >
+                <span class="texto-unidade">UN.</span>
+                <img
+                  src="./assets/ver-lista.svg"
+                  alt="Ícone de ver lista de unidades"
+                  class="flecha-quantidade"
+                />
+              </button>
+              <ul class="lista-unidades oculto">
+                <li class="item-unidade">Un.</li>
+                <li class="item-unidade">L</li>
+                <li class="item-unidade">Kg</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="categoria">
+            <label for="categoria">Categoria</label>
+            <button
+              type="button"
+              class="btn-categoria"
+              aria-label="Selecionar categoria"
+            >
+              <span class="texto-categoria">Selecione</span>
+              <img
+                class="flecha-categoria"
+                src="./assets/ver-lista.svg"
+                alt="Ícone de ver lista de categorias"
+              />
+            </button>
+            <ul class="lista-categorias oculto">
+              <li class="item-categoria">
+                <img
+                  class="icone-categoria"
+                  src="./assets/Padaria.svg"
+                  alt="Ícone de padaria"
+                />
+                <p class="nome-categoria">Padaria</p>
+              </li>
+              <li class="item-categoria">
+                <img
+                  class="icone-categoria"
+                  src="./assets/Legume.svg"
+                  alt="Ícone de legumes"
+                />
+                <p class="nome-categoria">Legume</p>
+              </li>
+              <li class="item-categoria">
+                <img
+                  class="icone-categoria"
+                  src="./assets/Carne.svg"
+                  alt="Ícone de carne"
+                />
+                <p class="nome-categoria">Carne</p>
+              </li>
+              <li class="item-categoria">
+                <img
+                  class="icone-categoria"
+                  src="./assets/Fruta.svg"
+                  alt="Ícone de frutas"
+                />
+                <p class="nome-categoria">Fruta</p>
+              </li>
+              <li class="item-categoria">
+                <img
+                  class="icone-categoria"
+                  src="./assets/Bebida.svg"
+                  alt="Ícone de bebidas"
+                />
+                <p class="nome-categoria">Bebida</p>
+              </li>
+              <li class="item-categoria">
+                <img
+                  class="icone-categoria"
+                  src="./assets/Pets.svg"
+                  alt="Ícone de pets"
+                />
+                <p class="nome-categoria">Pets</p>
+              </li>
+              <li class="item-categoria">
+                <img
+                  class="icone-categoria"
+                  src="./assets/Frios.svg"
+                  alt="Ícone de frios"
+                />
+                <p class="nome-categoria">Frios</p>
+              </li>
+              <li class="item-categoria">
+                <img
+                  class="icone-categoria"
+                  src="./assets/Café.svg"
+                  alt="Ícone de café"
+                />
+                <p class="nome-categoria">Café</p>
+              </li>
+              <li class="item-categoria">
+                <img
+                  class="icone-categoria"
+                  src="./assets/Higiene.svg"
+                  alt="Ícone de higiene"
+                />
+                <p class="nome-categoria">Higiene</p>
+              </li>
+            </ul>
+          </div>
+          <div class="formulario-btn">
+            <button
+              type="button"
+              class="btn-adicionar"
+              aria-label="Adicionar item"
+            >
+              <img
+                src="./assets/botao-adicionar.svg"
+                alt="Ícone de adicionar item à lista"
+              />
+            </button>
+            <button type="button" class="btn-salvar oculto">Salvar</button>
+          </div>
+        </div>
+      </form>
+      <ul class="lista-de-itens"></ul>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
+>>>>>>> ab00f33dc0e1043f3764c22c4f8dd9f90650baa6
