@@ -246,6 +246,9 @@ function atualizarLista() {
           itemLi
         );
 
+        // Esconder o menu de edição
+        listaMenu.classList.add("oculto");
+
         // Exibir o botão salvar e ocultar o botão adicionar
         botaoSalvarAlteracoes.classList.remove("oculto");
         botaoAdicionarItem.classList.add("oculto");
