@@ -231,9 +231,9 @@
     align-items: self-start;
     gap: 12px;
     margin-bottom: 40px;
-    position: absolute;
+    position: fixed;
     margin: 0 4vw;
-    top: -10%;
+    top: 15%;
   }
 
   .quantidade-categoria {
