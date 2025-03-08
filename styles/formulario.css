@@ -99,6 +99,16 @@
   position: relative;
 }
 
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.selecionar-unidade {
+  display: flex;
+}
+
 /* ===== DESCRIÇÃO DO ITEM ===== */
 .novo-item-descricao {
   display: flex;
@@ -209,73 +219,50 @@
 @media (max-width: 768px) {
   /* ===== FORMULÁRIO ===== */
   .formulario {
-    padding: 0;
-    position: fixed;
-    padding: 0;
-    width: 100%;
-    top: 25%;
-    display: flex;
-
-    margin-top: -50px;
-    justify-content: center;
+    width: 90vw; /*incluído*/
+    /* display: flex; */
+    /* flex-direction: column; */
+    padding: 0; /*alterado*/
+    /* text-align: left; */
+    position: relative; /*alterado*/
+    z-index: 2;
+    /* margin-top: -100px; */
+    padding: 0 5vw;
   }
 
   .formulario-titulo {
-    margin: 0 4vw;
-    top: 10%;
+    top: 5%;
   }
 
   .formulario-container {
-    display: flex;
+    top: 13%;
     flex-direction: column;
     align-items: self-start;
-    gap: 12px;
-    margin-bottom: 40px;
-    position: fixed;
-    margin: 0 4vw;
-    top: 15%;
-    margin-top: 20px;
+    width: auto;
+    justify-content: center;
   }
 
-  .quantidade-categoria {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-  }
-
-  /* ===== FORMULÁRIO - ITEM ===== */
-  .item {
-    width: 100%;
+  .btn-categoria {
+    width: 115px;
   }
 
   .item input {
-    width: auto;
+    width: 95%;
+  }
+
+  .quantidade-categoria {
+    justify-content: space-between;
+    align-items: self-start;
   }
 
   .lista-de-itens {
-    width: 92vw;
-    justify-content: center;
-    display: flex;
-    padding: 0 4vw;
-    margin-top: 150px;
-  }
-
-  .categoria-container {
-    gap: 100px;
+    width: 100%;
+    top: 45px;
   }
 
   .menu-editar {
-    right: 12%;
-    top: 50%;
-    padding: 9px;
-    background-color: var(--cinza-300);
-    border-radius: 8px;
-    border: 1px solid var(--cinza-300);
-  }
-
-  .editar-item,
-  .deletar-item {
-    padding: 2px;
+    right: 5%; /* Ajuste: posiciona o menu dentro da tela em telas menores */
+    top: 50%; /* Mantém o menu centralizado verticalmente */
+    transform: translateY(-50%);
   }
 }

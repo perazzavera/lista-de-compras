@@ -13,26 +13,38 @@
 
       <form class="formulario-container">
         <div class="item">
-          <label for="item">Item</label>
-          <input type="text" name="item" id="item" required />
+          <label for="item"
+            >Item
+            <input type="text" name="item" id="item" required />
+          </label>
         </div>
         <div class="quantidade-categoria">
           <div class="quantidade">
-            <label for="quantidade">Quantidade</label>
             <div class="quantidade-itens">
-              <input type="text" name="quantidade" id="quantidade" required />
-              <button
-                type="button"
-                class="btn-quantidade"
-                aria-label="Selecionar unidade"
-              >
-                <span class="texto-unidade">UN.</span>
-                <img
-                  src="./assets/ver-lista.svg"
-                  alt="Ícone de ver lista de unidades"
-                  class="flecha-quantidade"
-                />
-              </button>
+              <label for="quantidade"
+                >Quantidade
+                <div class="selecionar-unidade">
+                  <input
+                    type="text"
+                    name="quantidade"
+                    id="quantidade"
+                    required
+                  />
+                  <button
+                    type="button"
+                    class="btn-quantidade"
+                    aria-label="Selecionar unidade"
+                  >
+                    <span class="texto-unidade">UN.</span>
+                    <img
+                      src="./assets/ver-lista.svg"
+                      alt="Ícone de ver lista de unidades"
+                      class="flecha-quantidade"
+                    />
+                  </button>
+                </div>
+              </label>
+
               <ul class="lista-unidades oculto">
                 <li class="item-unidade">Un.</li>
                 <li class="item-unidade">L</li>
@@ -42,19 +54,21 @@
           </div>
 
           <div class="categoria">
-            <label for="categoria">Categoria</label>
-            <button
-              type="button"
-              class="btn-categoria"
-              aria-label="Selecionar categoria"
-            >
-              <span class="texto-categoria">Selecione</span>
-              <img
-                class="flecha-categoria"
-                src="./assets/ver-lista.svg"
-                alt="Ícone de ver lista de categorias"
-              />
-            </button>
+            <label for="categoria"
+              >Categoria
+              <button
+                type="button"
+                class="btn-categoria"
+                aria-label="Selecionar categoria"
+              >
+                <span class="texto-categoria">Selecione</span>
+                <img
+                  class="flecha-categoria"
+                  src="./assets/ver-lista.svg"
+                  alt="Ícone de ver lista de categorias"
+                />
+              </button>
+            </label>
             <ul class="lista-categorias oculto">
               <li class="item-categoria">
                 <img
