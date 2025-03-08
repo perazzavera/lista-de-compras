@@ -234,6 +234,7 @@
     position: fixed;
     margin: 0 4vw;
     top: 15%;
+    margin-top: 20px;
   }
 
   .quantidade-categoria {
