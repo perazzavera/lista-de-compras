@@ -91,7 +91,7 @@ lista-de-compras/
 
 A aplicação está disponível online via GitHub Pages. Acesse:
 
-🔗 [**Link para o Deploy**](#) *(Adicione o link quando estiver pronto!)*
+🔗 [**Link para o Deploy**](https://perazzavera.github.io/lista-de-compras/) 
 
 ---
 
